@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lazy Loading...</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #313131;
+      font-size: 60px;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .lazy {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lazy Loading images...</h1>
+  <img src="lazy_img.jpg" data-src="img_1.jpg" class="lazy" />
+  <img src="lazy_img.jpg" data-src="img_2.jpg" class="lazy" />
+  <script src="main.js"></script>
+</body>
+</html>
